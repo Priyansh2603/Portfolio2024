@@ -1,0 +1,156 @@
+@keyframes fadeInOut {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+  }
+  @keyframes slideInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    50% {
+      opacity: 0.5;
+      transform: translateY(10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  @keyframes colorChange {
+    0% {
+      color: #c6d083;
+    }
+    50% {
+      color: #64a3d6; /* Change to your desired color */
+    }
+    100% {
+      color: #c180be;
+    }
+  }
+  @keyframes sizeChange {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  @keyframes shapeChange {
+    0%{
+      transform: scaleX(1);
+    }
+    100% {
+      transform: scaleX(-1);
+    }
+  }
+  @keyframes borderchange {
+    0%{
+        border-radius: 15%;
+    }
+    50%{
+        border-radius: 30%;
+    }
+    75%{
+        border-radius: 50%;
+    }
+    100%{
+        border-radius: 20%;
+    }
+  }
+    body{
+        background-color: #062b3f;
+        color: white;
+    }
+  .hersection {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10vw;
+    height: 80vh; /* Set your desired background color */
+  }
+  .inttext {
+    font-size: 1.2em;
+  }
+  .hercontent {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5em;
+  }
+  
+  .name-animation {
+    font-size: 3em;
+    font-weight: bold;
+    animation: fadeInOut 4s ease-in-out infinite;
+  }
+  
+  .profanimation {
+    font-size: 2.5em;
+    font-style: italic;
+    animation: fadeInOut 4s ease-in-out infinite 2s; /* Delay the profession animation */
+  }
+  
+  .bisection {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .bisection img {
+    width: 25em; /* Set your desired image width */
+    height: 30em;
+    border-radius: 10%;
+    margin-bottom: 0px;
+    margin-left: 10em;
+    animation: borderchange 5s ease-in-out infinite;
+  }
+  .imaganimation:hover {
+    animation:  sizeChange 0.5s ease-in-out;
+  }
+  @media (max-width: 1060px) {
+    .hersection{
+      flex-direction: column;
+      align-items: center;
+      justify-content: start;
+      margin-bottom: 10px;
+      height: auto;
+    }
+    .bisection img{
+      margin: 0 0;
+      margin-bottom: 25px;
+      justify-content: center;
+    }
+    .welcsection{
+      margin: 5px 0;
+    }
+  }
+  /* Add responsive styles as needed */
+  @media (max-width: 768px) {
+    .hercontent {
+        flex-direction: row;
+        align-items: center;
+      }
+      .welcsection{
+        margin-top: 40px;
+      }
+      .bisection img {
+        margin-right: 0;
+        margin-bottom: 25px;
+        margin: 0 0;
+        justify-content: center;
+      }
+    /* Add additional responsive styles as needed */
+  }
+  
