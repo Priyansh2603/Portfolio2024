@@ -14,7 +14,7 @@ export default function HeroSection() {
             </div> */}
             <div className="hersection">
                 <div className="bisection">
-                    <img src="https://media.licdn.com/dms/image/D4D03AQHxIrZ5av6sPg/profile-displayphoto-shrink_800_800/0/1666004777735?e=2147483647&v=beta&t=o03r7SxNPUv0263iwk_KiNUrRoRrPMDYbksDuD6u-k4" alt="Your Name" className={`hero-image 'image-animation' }`} />
+                    <img src="https://res.cloudinary.com/dazhcprb8/image/upload/v1707134284/hehl2giro8iepsnsenn5.jpg" alt="Your Name" className={`hero-image 'image-animation' }`} />
 
                 </div>
                 <div className="hercontent">

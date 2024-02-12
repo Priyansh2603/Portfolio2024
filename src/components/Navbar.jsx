@@ -54,7 +54,7 @@ const Navbar = () => {
           Contact
         </Link>
         </ScrollLink>
-      <Avatar ml={28} size={'md'} src={coimb}/>
+      <Avatar ml={28} size={'md'} src="https://media.licdn.com/dms/image/D4D03AQHxIrZ5av6sPg/profile-displayphoto-shrink_800_800/0/1666004777735?e=2147483647&v=beta&t=o03r7SxNPUv0263iwk_KiNUrRoRrPMDYbksDuD6u-k4"/>
       </Box>
       <Box display={{ base: 'flex', md: 'none' }}>
         <DrawerExample/>
@@ -81,10 +81,10 @@ function DrawerExample() {
         <DrawerOverlay />
         <DrawerContent>
           <DrawerCloseButton />
-          <DrawerHeader>Create your account</DrawerHeader>
+          <DrawerHeader>Menu</DrawerHeader>
 
           <DrawerBody>
-            <Input placeholder='Type here...' />
+            <Link to=""></Link>
           </DrawerBody>
 
           <DrawerFooter>

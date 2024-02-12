@@ -73,7 +73,7 @@ export default function Footer() {
                     justify={'center'}
                     align={'center'}>
                     <Box display={'flex'}>
-                    <Avatar size={'md'} src={ishu}/>
+                    <Avatar size={'md'} src="https://media.licdn.com/dms/image/D4D03AQHxIrZ5av6sPg/profile-displayphoto-shrink_800_800/0/1666004777735?e=2147483647&v=beta&t=o03r7SxNPUv0263iwk_KiNUrRoRrPMDYbksDuD6u-k4"/>
                     <Heading fontFamily={'cursive'} fontSize={'25'}ml={4} mt={2}>Priyansh Daksha</Heading>
                     </Box>
                     <Stack direction={'row'} spacing={6}>
