@@ -12,7 +12,7 @@ export default function HeroSection() {
                     Explore my work and learn more about my skills and experiences.
                 </p>
             </div> */}
-            <div className="hersection">
+            <div className="hersection" >
                 <div className="bisection">
                     <img src="https://res.cloudinary.com/dazhcprb8/image/upload/v1707134284/hehl2giro8iepsnsenn5.jpg" alt="Your Name" className={`hero-image 'image-animation' }`} />
 
