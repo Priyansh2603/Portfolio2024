@@ -26,7 +26,8 @@ import {
   MdFacebook,
   MdOutlineEmail,
 } from 'react-icons/md'
-import { BsGithub, BsDiscord, BsPerson } from 'react-icons/bs'
+import { BsGithub, BsDiscord, BsPerson, BsTwitterX } from 'react-icons/bs'
+import { FaGithub, FaInstagram, FaLinkedin, FaWhatsapp } from 'react-icons/fa'
 
 export default function Contact() {
   return (
@@ -93,7 +94,7 @@ export default function Contact() {
                       size="lg"
                       isRound={true}
                       _hover={{ bg: '#0D74FF' }}
-                      icon={<MdFacebook size="28px" />}
+                      icon={<FaInstagram size="24px" />}
                     />
                     <IconButton
                       aria-label="github"
@@ -101,7 +102,7 @@ export default function Contact() {
                       size="lg"
                       isRound={true}
                       _hover={{ bg: '#0D74FF' }}
-                      icon={<BsGithub size="28px" />}
+                      icon={<FaGithub size="24px" />}
                     />
                     <IconButton
                       aria-label="github"
@@ -109,7 +110,7 @@ export default function Contact() {
                       size="lg"
                       isRound={true}
                       _hover={{ bg: '#0D74FF' }}
-                      icon={<BsGithub size="28px" />}
+                      icon={<FaLinkedin size="24px" />}
                     />
                     <IconButton
                       aria-label="discord"
@@ -117,13 +118,21 @@ export default function Contact() {
                       size="lg"
                       isRound={true}
                       _hover={{ bg: '#0D74FF' }}
-                      icon={<BsDiscord size="28px" />}
+                      icon={<BsTwitterX size="24px" />}
+                    />
+                    <IconButton
+                      aria-label="discord"
+                      variant="teal"
+                      size="lg"
+                      isRound={true}
+                      _hover={{ bg: '#0D74FF' }}
+                      icon={<FaWhatsapp size="24px" />}
                     />
                   </HStack>
                 </Box>
               </WrapItem>
               <WrapItem>
-                <Box bg="white" borderRadius="lg">
+                <Box bg="white" display={'flex'} justifyContent={'center'} borderRadius="lg">
                   <Box m={8} color="#0B0E3F">
                     <VStack spacing={5}>
                       <FormControl id="name">

@@ -2,13 +2,13 @@ import { ChakraProvider, Box, VStack, Text } from '@chakra-ui/react'
 import React from 'react'
 import DownloadResumeButton from './DownloadResume'
 import { Button } from '@chakra-ui/react'
-import { FaAngleUp, FaArrowPointer, FaDownLeftAndUpRightToCenter, FaEnvelope, FaGithub, FaInstagram, FaLinkedin, FaTwitter, FaVoicemail, FaWhatsapp, FaX, FaYoutube } from 'react-icons/fa6'
+import { FaAngleUp, FaArrowPointer, FaEnvelope, FaGithub, FaInstagram, FaLinkedin, FaTwitter,  FaWhatsapp, FaX, FaYoutube } from 'react-icons/fa6'
 import { Link } from 'react-router-dom'
 
 export default function Personal() {
   return (
     <ChakraProvider>
-      <VStack display={'flex'} bg={'teal'} color='black' py={5} spacing={'10'} flexDirection={'row'} alignItems={'center'} justifyContent={'center'}>
+      <VStack display={'flex'} flexWrap={'wrap'} bg={'teal'} color='black' py={5} spacing={'10'} flexDirection={'row'} alignItems={'center'} justifyContent={'center'}>
         <Link to={'https://www.instagram.com/priyansh_2603/'} target="_blank" ><FaInstagram size={34} /></Link>
         <Link to={'https://linkedin.com/in/priyansh-daksha-8a54a2212/'} target="_blank"><FaLinkedin size={34} /></Link>
         <Link to={'https://github.com/Priyansh2603/'} target="_blank"><FaGithub size={34} /></Link>
