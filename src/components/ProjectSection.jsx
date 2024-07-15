@@ -80,8 +80,8 @@ export default function ProjectSection() {
                 title: "Code Editor",
                 img: code,
                 desc: "Code Editor is a versatile web application enabling users to create profiles, write, execute, and save code snippets. Experience seamless coding with user-friendly features and robust functionalities.",
-                live: "https://github.com/Priyansh2603/coderunner",
-                git: "https://github.com/Priyansh2603/coderunner",
+                live: "https://code-editor-1-i10x.onrender.com/",
+                git: "https://github.com/Priyansh2603/Code-Editor",
                 detailed: "Code Editor is a web application designed to provide users with a platform for coding tasks. It allows users to create profiles, write code, run code snippets, and save their work for future reference. Code Editor is built using a stack comprising React for the frontend, Chakra UI for styling, Node.js and Express.js for the backend, MongoDB for database storage, and Git for version control.",
                 techs: [
                   { icon: FaReact, name: "React" },
