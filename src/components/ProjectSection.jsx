@@ -7,6 +7,7 @@ import shoeping from '../images/Shoeping.png';
 import chetna from '../images/chetna.png';
 import news from '../images/news.png';
 import tikTalk from '../images/tikTalk.png';
+import code from '../images/code.png'
 import { FaReact,FaNode } from "react-icons/fa";
 import { SiChakraui, SiExpress, SiMui, SiPython, SiSocketdotio } from "react-icons/si";
 import { SiMongodb } from "react-icons/si";
@@ -21,6 +22,7 @@ import { SiTailwindcss } from "react-icons/si";
 import { SiFlask } from "react-icons/si";
 import { Link } from 'react-router-dom';
 import Details from './Details';
+import ImageComponent from './ImageComponent';
 export default function ProjectSection() {
     const projects = [
             {
@@ -76,7 +78,7 @@ export default function ProjectSection() {
             },
             {
                 title: "Code Editor",
-                img: news,
+                img: code,
                 desc: "Code Editor is a versatile web application enabling users to create profiles, write, execute, and save code snippets. Experience seamless coding with user-friendly features and robust functionalities.",
                 live: "https://github.com/Priyansh2603/coderunner",
                 git: "https://github.com/Priyansh2603/coderunner",
@@ -122,13 +124,13 @@ export default function ProjectSection() {
                     return (
                         <Card maxW='sm' bg="gray.400" color="black" key={i}>
                             <CardBody>
-                                <Link to={e.live} target='_blank'>
-                                <Image
+                                {/* <Link to={e.live} target='_blank'> */}
+                                <ImageComponent
                                     src={e.img}
                                     alt='Green double couch with wooden legs'
                                     borderRadius='lg'
                                 />
-                                </Link>
+                                {/* </Link> */}
                                 <Stack mt='6' spacing='3' textAlign={'center'}>
                                     <Heading size='md'>{e.title}</Heading>
                                     <Text textAlign={'justify'}>
